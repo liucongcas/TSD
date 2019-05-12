@@ -1,0 +1,12 @@
+
+[2019-05-12 21:02:52] Beginning TopHat run (v2.0.14)
+-----------------------------------------------
+[2019-05-12 21:02:52] Checking for Bowtie
+		  Bowtie version:	 1.1.2.0
+[2019-05-12 21:02:52] Checking for Bowtie index files (genome)..
+[2019-05-12 21:02:52] Checking for reference FASTA file
+[2019-05-12 21:02:52] Generating SAM header for /data/data1/liuc/reference_genome/hg19-bowtie-1.1.2-index/hg19
+[2019-05-12 21:02:54] Preparing reads
+	 left reads: min. length=100, max. length=100, 7870 kept reads (0 discarded)
+	right reads: min. length=100, max. length=100, 7870 kept reads (0 discarded)
+[2019-05-12 21:02:54] Mapping left_kept_reads to genome hg19 with Bowtie 

@@ -1,0 +1,10 @@
+long_spanning_reads v2.0.14 (4318)
+--------------------------------------------
+Opening ./tophat-results/tmp/segment.fusions for reading
+[samopen] SAM header is present: 25 sequences.
+Loading reference sequences...
+        reference sequences loaded.
+Loading junctions...done
+Loading deletions...done
+Loading insertions...done
+Loading fusions...done

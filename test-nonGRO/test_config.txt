@@ -1,0 +1,21 @@
+genefile=PATH-to-TSD/annotation/hg19_genecode_gene_body.bed
+gapfile=PATH-to-TSD/annotation/hg19_gap_usefull.bed
+fastafile=PATH-to-TSD/annotation/hg19.fa
+fasta2bitfile=PATH-to-TSD/annotation/hg19.2bit
+junctions_inputfile=PATH-to-TSD/test-nonGRO/tophat-results/junctions.bed
+junctions_repswitch=N                  # Y used replicates to get a common candidates,default N
+junctions_repfile1=la                  # junctions.bed file of replicates. When junctions_repswitch is set with N, it can be filled in freely, such as “na” or you can fill in nothing 
+junctions_repfile2=la                  #junctions.bed file of replicates. When junctions_repswitch is set with N, it can be filled in freely, such as “na” or you can fill in nothing 
+fusions_inputfile=PATH-to-TSD/test-nonGRO/tophat-results/fusions.out
+fusions_repswitch=N                    # Y used replicates to get a common candidates,default N 
+fusions_repfile1=la                    # fusions.out file of replicates. when fusions_repswitch is set with N, it can be filled in freely, such as “na” or you can fill in nothing 
+fusions_repfile2=la                    # fusions.out file of replicates. When fusions_repswitch is set with N, it can be filled in freely, such as “na” or you can fill in nothing 
+gro_switch=N                           # Y means used GRO-seq data to filtered the read-through, N means used normal filtering method to filter read-through events.
+grofiledir=la
+delSV_switch=Y                         # N means shut down SV removal or Y means SV removal next
+SVVCF=PATH-to-TSD/annotation/hg19_common_CNV.bed
+min_score_filter=97                    # The minimum score for alternative matches over 80bp. default: 97; suggested: 95,96,97
+min_sup=5                              # The minimum support junction reads for fusions; default:5; suggested: 1,2,3,4,5,6
+Softwaredir=PATH-to-TSD
+blank_len=3000
+

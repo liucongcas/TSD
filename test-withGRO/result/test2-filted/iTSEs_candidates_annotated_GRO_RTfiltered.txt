@@ -1,0 +1,29 @@
+Chromosome	5_JunctionSites	3_JunctionSites	SplicingType	Surpported JunctionsReads	5_JunctionSites_strand	3_JunctionSites_strand	5_Junction_coordinates	3_Junction_coordinates	5_parent_gene	3_parent_gene	SV potential
+chr11	88133239	88106404	rr	6	+	+	minus	plus	none	none	Potentially derived from SVs
+chr11	88106494	88132849	+	12	+	+	minus	plus	none	none	Potentially derived from SVs
+chr11	88106494	88132252	+	8	+	+	minus	plus	none	none	Potentially derived from SVs
+chr11	107779127	810012	ff	158	-	-	plus	minus	SLC35F2	none	No potential signals
+chr11	6964871	7009446	+	2	+	+	minus	plus	ZNF215	none	No potential signals
+chr11	6977012	7009446	+	3	+	+	minus	plus	ZNF215	none	No potential signals
+chr11	27988865	27957215	-	7	-	-	plus	minus	none	none	No potential signals
+chr11	82642890	82694663	+	3	+	+	minus	plus	C11orf82	none	No potential signals
+chr11	88106494	88156654	+	2	+	+	minus	plus	none	none	No potential signals
+chr11	102206950	102248587	+	12	+	+	minus	plus	BIRC3	BIRC2	No potential signals
+chr11	102796149	102826908	+	1	+	+	minus	plus	none	none	No potential signals
+chr10	12171792	931699	fr	1	+	-	minus	minus	SEC61A2	LARP4B	Potentially derived from SVs
+chr10	38392138	43040375	rf	3	-	+	plus	plus	none	none	No potential signals
+chr10	31608220	1118055	rr	6	+	+	minus	plus	ZEB1	WDR37	No potential signals
+chr10	31608220	22055237	fr	5	+	-	minus	minus	ZEB1	DNAJC1	No potential signals
+chr10	62552046	61612459	fr	1	+	-	minus	minus	CDK1	CCDC6	No potential signals
+chr10	131265559	49609654	rr	1	+	+	minus	plus	MGMT	MAPK8	No potential signals
+chr10	25250803	25310670	+	5	+	+	minus	plus	none	THNSL1	No potential signals
+chr10	89892309	89958725	+	5	+	+	minus	plus	none	none	No potential signals
+chr10	89958886	90129835	+	2	+	+	minus	plus	none	none	No potential signals
+chr10	91648043	91674392	+	1	+	+	minus	plus	none	none	No potential signals
+chr10	91811538	91839307	+	1	+	+	minus	plus	none	none	No potential signals
+chr10	91860194	91979944	+	2	+	+	minus	plus	none	none	No potential signals
+chr10	91860194	91984795	+	2	+	+	minus	plus	none	none	No potential signals
+chr10	92492180	92479840	-	1	-	-	plus	minus	none	none	No potential signals
+chr10	121946689	121964506	+	1	+	+	minus	plus	none	none	No potential signals
+chr10	121968506	122047901	+	15	+	+	minus	plus	none	none	No potential signals
+chr10	135216276	135269740	+	8	+	+	minus	plus	MTG1	RP11-108K14.4	No potential signals

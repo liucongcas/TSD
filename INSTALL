@@ -1,0 +1,15 @@
+
+cd PATHtoTSD
+cd tools-package
+# install Tophat
+
+tar -xvzf tophat-2.0.14.Linux_x86_64.tar.gz 
+cp tophat-2.0.14.Linux_x86_64/* ../tools
+
+#Install bowtie
+unzip bowtie-1.1.2-linux-x86_64.zip
+export PATH="/PATHtoTSD/tools-package/bowtie-1.1.2:$PATH
+
+
+For data analysis, please directly call the TSD.py script. 
+Details please refer to the readme.md file and TSD.test.sh file.

@@ -12,4 +12,4 @@ export PATH="/PATHtoTSD/tools-package/bowtie-1.1.2:$PATH
 
 
 For data analysis, please directly call the TSD.py script. 
-Details please refer to the readme.md file and TSD.test.sh file.
+Details please refer to the README.pdf file and test files in the test folders.

@@ -6,6 +6,11 @@ def combin_results():
     global genefile
     global junctions_inputfile
     global fusions_inputfile
+    global SV_dis
+    global blank_len
+    global delSV_switch
+    global grofiledir
+    global gro_switch
     junctions_inputfile=''
     fusions_inputfile=''
     gro_switch = ''
@@ -14,6 +19,7 @@ def combin_results():
     SVVCF = ''
     blank_len=''
     Softwaredir = ''
+    SV_dis=''
     for pr in fr_con:
         if re.search("=", pr[0]):
             vx = pr[0].split("=")[0].split("#")[0].strip(" ")
@@ -36,6 +42,8 @@ def combin_results():
                 blank_len = vy
             elif re.search("Softwaredir", vx):
                 Softwaredir = vy
+            elif re.search("SV_dis", vx):
+                SV_dis = vy
     subprocess.call("python "+Softwaredir+"/pipeline/TSD_junctions.py -i "+configurefile+" -o "+ outputdir,shell = True)
     subprocess.call("python "+Softwaredir+"/pipeline/TSD_fusions.py -i "+configurefile+" -o "+ outputdir,shell = True)
     filelist=os.listdir(outputdir)
@@ -52,7 +60,7 @@ def combin_results():
             if delSV_switch == "Y":
                 if os.path.isfile(file_For_SV):
                     subprocess.call("python " + Softwaredir + "/pipeline/DNAlevel_NCL_filter.py -i " + file_For_SV\
-                                    + " -a " + SVVCF + " -o " + outputdir, shell=True)
+                                    + " -a " + SVVCF + " -s " + SV_dis+ " -o " + outputdir, shell=True)
                 else:
                     print "There remains no candidate after read-through filter step"
             else:
@@ -63,7 +71,7 @@ def combin_results():
             if delSV_switch == "Y":
                 if os.path.isfile(file_For_SV):
                     subprocess.call("python " + Softwaredir + "/pipeline/DNAlevel_NCL_filter.py -i " + file_For_SV\
-                                    + " -a " + SVVCF + " -o " + outputdir, shell=True)
+                                    + " -a " + SVVCF + " -s " + SV_dis + " -o " + outputdir, shell=True)
                 else:
                     print "There remains no candidate after read-through filter step"
             else:

@@ -20,7 +20,7 @@ def TSnearSV():
             for j in range(len(list_tmp1)):
                 t_l = float(list_tmp1[j][1])
                 t_r = float(list_tmp1[j][2])
-                if abs(s_l - t_l) < 1000 and abs(s_r - t_r) < 1000:
+                if abs(s_l - t_l) < SV_dis and abs(s_r - t_r) < SV_dis:
                         list_near2.append(fr_filtered[i])
                         break
     list_final2 = [i for i in fr_filtered if i not in list_near2]
@@ -41,24 +41,29 @@ def main(argv):
     global outputdir
     global SVs_annotation_vcffile
     global GRO_filteredfile
+    global SV_dis
     SVs_annotation_vcffile = ''
     GRO_filteredfile=''
+    SV_dis=''
     outputdir=''
     try:
-        opts, args = getopt.getopt(argv, "hi:a:o:", ["ifile=", "afile=","odir="])
+        opts, args = getopt.getopt(argv, "hi:a:s:o:", ["ifile=", "afile=","sfile=","odir="])
     except getopt.GetoptError:
-        print'python DNAlevel_NCL_filter.py  -i <GRO_filteredfile> -a <SVs_annotation_vcffile> -o <outputdir>'
-        sys.exit(3)
+        print'python DNAlevel_NCL_filter.py  -i <GRO_filteredfile> -a <SVs_annotation_vcffile> -s <SV_dis> -o <outputdir>'
+        sys.exit(4)
     for opt, arg in opts:
         if opt == '-h':
-            print'python DNAlevel_NCL_filter.py -i <GRO_filteredfile> -a <SVs_annotation_vcffile> -o <outputdir>'
+            print'python DNAlevel_NCL_filter.py -i <GRO_filteredfile> -a <SVs_annotation_vcffile> -s <SV_dis> -o <outputdir>'
             sys.exit()
         elif opt in ("-i", "--ifile"):
             GRO_filteredfile = arg
         elif opt in ("-a", "--afile"):
             SVs_annotation_vcffile = arg
+        elif opt in ("-s", "--sfile"):
+            SV_dis = arg
         elif opt in ("-o", "--odir"):
             outputdir = arg
+    SV_dis=float(SV_dis)
     TSnearSV()
     t2 = time.time()
     print"The time needed in DNAlevel_NCL_filter for TSEs is:", t2 - t1

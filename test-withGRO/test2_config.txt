@@ -17,4 +17,5 @@ SVVCF=PATH-to-TSD/annotation/GM12878_hg19_SV.bed
 min_score_filter=97                    # The minimum score for alternative matches over 80bp. default: 97; suggested: 95,96,97
 min_sup=5                              # The minimum support junction reads for fusions; default:5; suggested: 1,2,3,4,5,6
 Softwaredir=PATH-to-TSD
-blank_len=3000
+blank_len=3000                         # Minimum length of GRO-seq-reads-free regions
+SV_dis=2000                            # Distances between junction sites and the breakpoints of SVs. Skip fusions that can be explained by known SVs
